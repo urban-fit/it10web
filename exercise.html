@@ -1,0 +1,17 @@
+<select name="month" id="month">
+    <option value="">-Select One-</option>
+</select>
+
+<script>
+    const months = ["January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"];
+
+    const select = document.getElementById("month");
+
+    months.forEach((name, index) => {
+        const option = document.createElement("option");
+        option.value = index + 1;
+        option.textContent = name;
+        select.appendChild(option);
+    });
+</script>
